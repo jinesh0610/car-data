@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Create</h1>
+<div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="brand">Brand</label><br>
+        <input type="text", id = 'brand', name = 'brand'><br>
+        <label for="year">Year</label><br>
+        <input type="text", id = 'year', name = 'year'><br>
+        <input type="Submit">
+    </form>
+</div>
+{% endblock body %}
